@@ -16,7 +16,7 @@ ui.http.port=8080
 # update will require authentication with a username and password.
 ui.kiosk.enable=true
 ui.kiosk.user=admin
-ui.kiosk.pass=DePole12
+ui.kiosk.pass=admin
 
 # The delay after validating publishing objects for a trust anchor before the next validation
 # occurs.
