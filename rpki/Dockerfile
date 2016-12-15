@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-LABEL version="1.0"
+LABEL version="1.1"
 
 MAINTAINER Alexey Manikin <alexey@beget.ru>
 
@@ -23,9 +23,9 @@ RUN chmod 711 / && \
   export JAVA_HOME=/usr/lib/jvm/java-7-oracle && \
   echo "export JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> /etc/bash.bashrc && \
   cd /home && \
-  wget https://rrdp.ripe.net/certification/content/static/validator/rpki-validator-app-2.22-dist.tar.gz && \
-  tar -xzvf /home/rpki-validator-app-2.22-dist.tar.gz && \
-  rm -rf /home/rpki-validator-app-2.22-dist.tar.gz && \ 
+  wget https://rrdp.ripe.net/certification/content/static/validator/rpki-validator-app-2.23-dist.tar.gz && \
+  tar -xzvf /home/rpki-validator-app-2.23-dist.tar.gz && \
+  rm -rf /home/rpki-validator-app-2.23-dist.tar.gz && \ 
   rm -rf /var/lib/apt/lists/*;  
 
 ADD install_minit.sh /usr/local/sbin/install_minit.sh
