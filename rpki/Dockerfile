@@ -19,9 +19,9 @@ RUN chmod 711 / && \
   sudo debconf-set-selections && \
   echo debconf shared/accepted-oracle-license-v1-1 seen true | \
   sudo debconf-set-selections && \
-  apt-get install -y oracle-java7-installer && \
-  export JAVA_HOME=/usr/lib/jvm/java-7-oracle && \
-  echo "export JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> /etc/bash.bashrc && \
+  apt-get install -y oracle-java8-installer && \
+  export JAVA_HOME=/usr/lib/jvm/java-8-oracle && \
+  echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /etc/bash.bashrc && \
   cd /home && \
   wget https://rrdp.ripe.net/certification/content/static/validator/rpki-validator-app-2.23-dist.tar.gz && \
   tar -xzvf /home/rpki-validator-app-2.23-dist.tar.gz && \
